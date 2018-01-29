@@ -1,0 +1,18 @@
+title: Personal Website
+email: rloganiv@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+    GitHub Pages site for Robert L. Logan IV.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "rloganiv.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: rloganiv
+github_username:  rloganiv
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+sass:
+    load_paths:
+        - _sass
+        - node_modules
+exclude: []
