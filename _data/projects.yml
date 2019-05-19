@@ -1,11 +1,85 @@
+- title: "Barack's Wife Hillary: Using Knowledge Graphs for Fact-Aware Language Modeling"
+  authors:
+    - name: Robert L. Logan IV
+      website: https://rloganiv.github.io
+    - name: Nelson F. Liu
+      website: https://homes.cs.washington.edu/~nfliu/
+    - name: Mattew E. Peters
+      website: https://matt-peters.github.io/
+    - name: Matt Gardner
+      website: https://allenai.org/team/mattg/
+    - name: Sameer Singh
+      website: http://www.sameersingh.org
+  venue: The 57th Annual Meeting of the Association for Computational Linguistics (ACL)
+  type: conference
+  abstract: >
+    Modeling human language requires the ability to not only generate fluent text but also encode factual knowledge.
+    However, traditional language models are only capable of remembering facts seen at training time, and often have difficulty recalling them.
+    To address this, we introduce the knowledge graph language model (KGLM), a neural language model with mechanisms for selecting and copying facts from a knowledge graph that are relevant to the context.
+    These mechanisms enable the model to render information it has never seen before, as well as generate out-of-vocabulary tokens.
+    We also introduce the Linked WikiText-2 dataset, a corpus of annotated text aligned to the Wikidata knowledge graph whose contents (roughly) match the popular WikiText-2 benchmark.
+    In experiments, we demonstrate that the KGLM achieves significantly better performance than a strong baseline language model.
+    We additionally compare different language model's ability to complete sentences requiring factual knowledge, showing that the KGLM outperforms even very large language models in generating facts.
+  arxiv: assets/projects/kglm.pdf
+
+- title: "Bayesian Evaluation of Black-Box Classifiers"
+  authors:
+    - name: Disi Ji
+      webiste: https://www.linkedin.com/in/disi-ji-324802a2
+    - name: Robert L. Logan IV
+      website: https://rloganiv.github.io
+    - name: Padhraic Smyth
+      website: https://www.ics.uci.edu/~smyth/index.html
+    - name: Mark Steyvers
+      website: http://psiexp.ss.uci.edu/research/
+  venue: ICML 2019 Workshop on Uncertainty & Robustness in Deep Learning
+  type: workshop
+  abstract: >
+    There is an increasing need for accurate quantitative assessment of the performance of prediction models (such as deep neural networks), out-of-sample, e.g., in new environments after they have been trained.
+    In this context we propose a Bayesian framework for assessing performance characteristics of black-box classifiers, performing inference on quantities such as accuracy and calibration bias.
+    We demonstrate the approach using three deep neural networks applied to large real-world data sets, performing inference and active learning to assess class-specific performance.
+  arxiv: assets/projects/bayesian-blackbox.pdf
+
+- title: "PoMo: Generating Entity-Specific Post-Modifiers in Context"
+  authors:
+    - name: Jun Seok Kang
+      website: https://www3.cs.stonybrook.edu/~junkang/
+    - name: Robert L. Logan IV
+      website: https://rloganiv.github.io
+    - name: Zewei Chu
+      website: https://people.cs.uchicago.edu/~zeweichu/
+    - name: Yang Chen
+    - name: Dheeru Dua
+      website: https://ddua.github.io/src/index.html
+    - name: Kevin Gimpel
+      website: https://ttic.uchicago.edu/~kgimpel/
+    - name: Sameer Singh
+      website: http://www.sameersingh.org
+    - name: Niranjan Balasubramanian
+      website: https://www3.cs.stonybrook.edu/~niranjan/
+  venue: 2019 Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL)
+  type: conference
+  abstract: >
+      We introduce entity post-modifier generation as an instance of a collaborative writing task.
+      Given a sentence about a target entity, the task is to automatically generate a post-modifier phrase that provides contextually relevant information about the entity.
+      For example, for the sentence, "Barack Obama, _______, supported the \#MeToo movement.", the phrase "a father of two girls" is a contextually relevant post-modifier.
+      To this end, we build PoMo, a post-modifier dataset created automatically from news articles reflecting a journalistic need for incorporating entity information that is relevant to a particular news event.
+      PoMo consists of more than 231K sentences with post-modifiers and associated facts extracted from Wikidata for around 57K unique entities.
+      We use crowdsourcing to show that modeling contextual relevance is necessary for accurate post-modifier generation.
+      We adapt a number of existing generation approaches as baselines for this dataset.
+      Our results show there is large room for improvement in terms of both identifying relevant facts to include (knowing which claims are relevant gives a >20% improvement in BLEU score), and generating appropriate post-modifier text for the context (providing relevant claims is not sufficient for accurate generation).
+      We conduct an error analysis that suggests promising directions for future research.
+  arxiv: https://arxiv.org/abs/1904.03111
+  dataset: https://stonybrooknlp.github.io/PoMo/
+
 - title: Multimodal Attribute Extraction
   image: assets/projects/
   authors:
-      - name: Robert L. Logan IV
-        website: https://rloganiv.github.io
-      - name: Samuel Humeau
-      - name: Sameer Singh
-        website: http://www.sameersingh.org
+    - name: Robert L. Logan IV
+      website: https://rloganiv.github.io
+    - name: Samuel Humeau
+    - name: Sameer Singh
+      website: http://www.sameersingh.org
   venue: 6th Workshop on Automated Knowledge Base Construction (AKBC) 2017
   type: workshop
   abstract: >
@@ -28,4 +102,3 @@
   poster: assets/projects/mae-poster.pdf
   github: https://github.com/rloganiv/mae-model
   dataset: https://rloganiv.github.io/mae
-
