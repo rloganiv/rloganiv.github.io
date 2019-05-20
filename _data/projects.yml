@@ -1,4 +1,5 @@
-- title: "Barack's Wife Hillary: Using Knowledge Graphs for Fact-Aware Language Modeling"
+- id: kglm
+  title: "Barack's Wife Hillary: Using Knowledge Graphs for Fact-Aware Language Modeling"
   authors:
     - name: Robert L. Logan IV
       website: https://rloganiv.github.io
@@ -22,7 +23,8 @@
     We additionally compare different language model's ability to complete sentences requiring factual knowledge, showing that the KGLM outperforms even very large language models in generating facts.
   arxiv: assets/projects/kglm.pdf
 
-- title: "Bayesian Evaluation of Black-Box Classifiers"
+- id: bayesian-blackbox
+  title: "Bayesian Evaluation of Black-Box Classifiers"
   authors:
     - name: Disi Ji
       webiste: https://www.linkedin.com/in/disi-ji-324802a2
@@ -40,7 +42,8 @@
     We demonstrate the approach using three deep neural networks applied to large real-world data sets, performing inference and active learning to assess class-specific performance.
   arxiv: assets/projects/bayesian-blackbox.pdf
 
-- title: "PoMo: Generating Entity-Specific Post-Modifiers in Context"
+- id: pomo
+  title: "PoMo: Generating Entity-Specific Post-Modifiers in Context"
   authors:
     - name: Jun Seok Kang
       website: https://www3.cs.stonybrook.edu/~junkang/
@@ -72,7 +75,8 @@
   arxiv: https://arxiv.org/abs/1904.03111
   dataset: https://stonybrooknlp.github.io/PoMo/
 
-- title: Multimodal Attribute Extraction
+- id: mae
+  title: Multimodal Attribute Extraction
   image: assets/projects/
   authors:
     - name: Robert L. Logan IV

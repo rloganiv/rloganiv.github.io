@@ -12,7 +12,7 @@ title: "Robert L. Logan IV"
 
     <div class="col-lg-9 col-md-12">
       <h2 class="mt-0">Robert L. Logan IV</h2>
-      <h4 class="mt-0">Ph.D. Candidate at UC Irvine</h4>
+      <h4 class="mt-0">Ph.D. Student at UC Irvine</h4>
       <p class="text-justify">
         I am a Ph.D. student at the <a href="www.uci.edu">University of California, Irvine</a>, studying machine learning and natural language processing under <a href="http://www.ics.uci.edu/~smyth/">Padhraic Smyth</a> and <a href="sameersingh.org">Sameer Singh</a>.
         My research primarily focuses on the interplay between language modeling and information extraction.
@@ -51,7 +51,11 @@ title: "Robert L. Logan IV"
           {% endif %}
         {% endfor %}
       </h6>
-      <p class="card-text text-justify"><b>Abstract:</b> {{ project.abstract }}</p>
+
+
+      <a class="btn btn-primary" data-toggle="collapse" href="#{{ project.id }}" role="button" aria-expanded="false" aria-controls="{{ project.id }}">
+        Abstract
+      </a>
 
       {% if project.arxiv %}
       <a role="button" class="btn btn-primary" target="_blank" href={{ project.arxiv }}>Paper</a>
@@ -68,6 +72,13 @@ title: "Robert L. Logan IV"
       {% if project.dataset %}
       <a role="button" class="btn btn-primary" target="_blank" href={{ project.dataset }}>Dataset</a>
       {% endif %}
+
+      <div class="collapse" id="{{ project.id }}">
+        <div class="card card-body">
+          {{ project.abstract}}
+        </div>
+      </div>
+
     </div>
   </div>
   {% endfor %}
@@ -80,7 +91,7 @@ title: "Robert L. Logan IV"
   <div class="listgroup">
     <a href="mailto:rlogan@uci.edu" class="list-group-item"><i class="fas fa-envelope fa-2x"></i>&nbsp; Email</a>
     <a href="https://www.github.com/rloganiv" class="list-group-item"><i class="fab fa-github fa-2x"></i>&nbsp; GitHub</a>
-    <a href="https://www.linkedin.com/in/rloganiv" class="list-group-item"><i class="fas fa-envelope fa-2x"></i>&nbsp; LinkedIn</a>
+    <a href="https://www.linkedin.com/in/rloganiv" class="list-group-item"><i class="fab fa-linkedin fa-2x"></i>&nbsp; LinkedIn</a>
   </div>
 </div>
 </a>
