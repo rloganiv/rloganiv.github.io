@@ -22,6 +22,7 @@
     In experiments, we demonstrate that the KGLM achieves significantly better performance than a strong baseline language model.
     We additionally compare different language model's ability to complete sentences requiring factual knowledge, showing that the KGLM outperforms even very large language models in generating facts.
   arxiv: assets/projects/kglm.pdf
+  dataset: https://rloganiv.github.io/linked-wikitext-2
 
 - id: bayesian-blackbox
   title: "Bayesian Evaluation of Black-Box Classifiers"
