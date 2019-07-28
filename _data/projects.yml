@@ -21,7 +21,7 @@
     We also introduce the Linked WikiText-2 dataset, a corpus of annotated text aligned to the Wikidata knowledge graph whose contents (roughly) match the popular WikiText-2 benchmark.
     In experiments, we demonstrate that the KGLM achieves significantly better performance than a strong baseline language model.
     We additionally compare different language model's ability to complete sentences requiring factual knowledge, showing that the KGLM outperforms even very large language models in generating facts.
-  arxiv: assets/projects/kglm.pdf
+  arxiv: https://www.aclweb.org/anthology/papers/P/P19/P19-1598/
   dataset: https://rloganiv.github.io/linked-wikitext-2
 
 - id: bayesian-blackbox
