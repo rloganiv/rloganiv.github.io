@@ -1,3 +1,152 @@
+- id: triggers
+  title: "Eliciting Knowledge from Language Models Using Automatically Generated Prompts"
+  authors:
+    - name: Taylor Shin*
+    - name: Yasaman Razeghi*
+      website: https://yasamanrazeghi.com/
+    - name: Robert L. Logan IV*
+      website: https://rloganiv.github.io/
+    - name: Eric Wallace
+      website: https://www.ericswallace.com/
+    - name: Sameer Singh
+      website: http://www.sameersingh.org
+  venue: "2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)"
+  abstract: > 
+    Determining the knowledge captured by pretrained language models is an
+    important challenge, and is commonly tackled by probing model
+    representations using classifiers.  However, it is difficult to design
+    probes for semantic knowledge such as facts or textual entailment.
+    Reformulating these semantic tasks as cloze tests (i.e., fill-in-the-blank
+    problems) is a promising method for probing such knowledge, but, requires
+    manual crafting of textual prompts to elicit this knowledge, limiting its
+    use.  In this paper, we develop an automated, task-agnostic method to
+    create cloze prompts for any classification task, based on a
+    gradient-guided search.  We find prompts that demonstrate MLMs have an
+    inherent capability to perform sentiment analysis and natural language
+    inference, and without any finetuning, sometimes achieve performance on-par
+    with recent state-of-the-art supervised models.  We also show that our
+    prompts elicit more accurate factual knowledge from MLMs compared to manual
+    prompts, and further, MLMs can be used as relation extractors out of the
+    box, when prompted with suitable prompts, more effectively than recent
+    supervised RE models.
+
+- id: covid-19
+  title: "Detecting COVID-19 Misinformation on Social Media"
+  authors:
+    - name: Tamanna Hossain*
+      website: https://tamanna-hossain-kay.com
+    - name: Robert L. Logan IV*
+      website: https://rloganiv.github.io/
+    - name: Arjuna Ugarte*
+    - name: Yoshitomo Matsubara*
+      website: https://iasl.ics.uci.edu/people/yoshitom/
+    - name: Sean Young
+      website: http://seanyoungphd.com/
+    - name: Sameer Singh
+      website: http://www.sameersingh.org
+  venue: EMNLP 2020 Workshop NLP-COVID
+  abstract: >
+    The ongoing pandemic has heightened the need for developing tools to flag
+    COVID-19-related misinformation on the internet, specifically on social
+    media such as Twitter. However, due to novel language and the rapid change
+    of information, existing misinformation detection datasets are not
+    effective in evaluating systems designed to detect misinformation on this
+    topic. Misinformation detection can be subdivided into two sub-tasks -
+    retrieval of misconceptions relevant to posts being checked for veracity,
+    and stance detection to identify whether the posts agree, disagree, or
+    express no stance towards the retrieved misconceptions. To facilitate
+    research on this task, we release COVID-Lies, a dataset of 5K
+    expert-annotated tweets to evaluate the performance of misinformation
+    detection systems on 86 different pieces of COVID-19 related
+    misinformation. We evaluate existing NLP systems on this dataset, providing
+    first benchmarks and identifying key challenges for future models to
+    improve upon.
+  arxiv: https://openreview.net/forum?id=FCna-s-ZaIE
+
+- id: importance-sampling
+  title: "On Importance Sampling-Based Evaluation of Latent Language Models"
+  authors:
+    - name: Robert L. Logan IV
+      website: https://rloganiv.github.io/
+    - name: Matt Gardner
+      website: https://allenai.org/team/mattg/
+    - name: Sameer Singh
+      website: http://www.sameersingh.org
+  venue: Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL)
+  type: conference
+  abstract: >
+    Language models that use additional latent structures (e.g., syntax trees,
+    coreference chains, knowledge graph links) provide several advantages over
+    traditional language models. However, likelihood-based evaluation of these
+    models is often intractable as it requires marginalizing over the latent
+    space. Existing works avoid this issue by using importance sampling. Although
+    this approach has asymptotic guarantees, analysis is rarely conducted on the
+    effect of decisions such as sample size and choice of proposal distribution
+    on the reported estimates. In this paper, we carry out this analysis for
+    three models: RNNG, EntityNLM, and KGLM. In addition, we elucidate subtle
+    differences in how importance sampling is applied in these works that can
+    have substantial effects on the final estimates, as well as provide
+    theoretical results which reinforce the validity of this technique.
+  arxiv: https://www.aclweb.org/anthology/2020.acl-main.196/
+
+- id: pcori
+  title: "Detecting Conversation Topics in Primary Care Office Visits from Transcripts of Patient-Provider Interactions"
+  authors: 
+    - name: Jihyun Park
+      website: https://ics.uci.edu/~jihyunp/
+    - name: Dimitrios Kotzias
+      website: https://dkotzias.com/
+    - name: Patty Kuo
+    - name: Robert L. Logan IV
+      website: https://rloganiv.github.io/
+    - name: Kritzia Merced
+    - name: Sameer Singh
+      website: http://www.sameersingh.org
+    - name: Michael Tanana
+      website: https://faculty.utah.edu/u0554980-Michael_J_Tanana/hm/index.hml
+    - name: Efi Karra Taniskidou
+    - name: Jennifer Elston Lafata
+      website: https://pharmacy.unc.edu/directory/jel/
+    - name: David C Atkins
+      website: https://www.brite.uw.edu/davidatkins
+    - name: Ming Tai-Seale
+      website: https://profiles.ucsd.edu/ming.tai-seale
+    - name: Zac E Imel
+      website: https://faculty.utah.edu/u0377435-ZAC_E_IMEL/teaching/index.hml
+    - name: Padhraic Smyth
+      website: https://www.ics.uci.edu/~smyth/index.html
+  venue: "Journal of the American Medical Informatics Association, Volume 26, Issue 12, December 2019"
+  type: journal
+  abstract: >
+    Amid electronic health records, laboratory tests, and other technology,
+    office-based patient and provider communication is still the heart of
+    primary medical care. Patients typically present multiple complaints,
+    requiring physicians to decide how to balance competing demands. How this
+    time is allocated has implications for patient satisfaction, payments, and
+    quality of care. We investigate the effectiveness of machine learning
+    methods for automated annotation of medical topics in patient-provider
+    dialog transcripts.
+    We used dialog transcripts from 279 primary care visits to predict
+    talk-turn topic labels. Different machine learning models were trained to
+    operate on single or multiple local talk-turns (logistic classifiers,
+    support vector machines, gated recurrent units) as well as sequential
+    models that integrate information across talk-turn sequences (conditional
+    random fields, hidden Markov models, and hierarchical gated recurrent
+    units).
+    Evaluation was performed using cross-validation to measure 1)
+    classification accuracy for talk-turns and 2) precision, recall, and F1
+    scores at the visit level. Experimental results showed that sequential
+    models had higher classification accuracy at the talk-turn level and higher
+    precision at the visit level. Independent models had higher recall scores
+    at the visit level compared with sequential models.
+    Incorporating sequential information across talk-turns improves the
+    accuracy of topic prediction in patient-provider dialog by smoothing out
+    noisy information from talk-turns. Although the results are promising, more
+    advanced prediction techniques and larger labeled datasets will likely be
+    required to achieve prediction performance appropriate for real-world
+    clinical applications.
+  arxiv: https://doi.org/10.1093/jamia/ocz140
+
 - id: knowbert
   title: "Knowledge Enhanced Contextual Word Representations"
   authors:
@@ -65,9 +214,9 @@
 - id: bayesian-blackbox
   title: "Bayesian Evaluation of Black-Box Classifiers"
   authors:
-    - name: Disi Ji
+    - name: Disi Ji*
       webiste: https://www.linkedin.com/in/disi-ji-324802a2
-    - name: Robert L. Logan IV
+    - name: Robert L. Logan IV*
       website: https://rloganiv.github.io
     - name: Padhraic Smyth
       website: https://www.ics.uci.edu/~smyth/index.html
