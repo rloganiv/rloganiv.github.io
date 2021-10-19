@@ -1,5 +1,137 @@
+- id: nullprompts
+  title: "Cutting Down on Prompts and Parameters: Simple Few-Shot Learning with Language Models"
+  authors:
+    - name: Robert L. Logan IV
+      website: https://rloganiv.github.io/
+    - name: Ivana Balazevic
+    - name: Eric Wallace
+    - name: Fabio Petroni
+    - name: Sameer Singh
+      website: http://www.sameersingh.org
+    - name: Sebastian Riedel
+  type: preprint
+  abstract: >
+    Prompting language models (LMs) with training examples and task
+    descriptions has been seen as critical to recent successes in few-shot
+    learning. In this work, we show that finetuning LMs in the few-shot setting
+    can considerably reduce the need for prompt engineering. In fact, one can use
+    null prompts, prompts that contain neither taskspecific templates nor
+    training examples, and achieve competitive accuracy to manuallytuned prompts
+    across a wide range of tasks. While finetuning LMs does introduce new
+    parameters for each downstream task, we show that this memory overhead can be
+    substantially reduced: finetuning only the bias terms can achieve comparable
+    or better accuracy than standard finetuning while only updating 0.1% of the
+    parameters. All in all, we recommend finetuning LMs for few-shot learning as
+    it is more accurate, robust to different prompts, and can be made nearly as
+    efficient as using frozen LMs.
+  paper: https://arxiv.org/pdf/2106.13353.pdf
+  github: https://github.com/ucinlp/null-prompts
+
+- id: streaming-cdc
+  title: "Benchmarking Scalable Methods for Streaming Cross Document Entity Coreference"
+  authors: 
+    - name: Robert L. Logan IV
+      website: https://rloganiv.github.io/
+    - name: Andrew McCallum
+      website: https://people.cs.umass.edu/~mccallum/
+    - name: Sameer Singh
+      website: http://www.sameersingh.org
+    - name: Dan Bikel
+  venue: "ACL 2021"
+  type: conference
+  abstract: >
+    Streaming cross document entity coreference (CDC) systems disambiguate
+    mentions of named entities in a scalable manner via incremental clustering.
+    Unlike other approaches for named entity disambiguation (e.g., entity
+    linking), streaming CDC allows for the disambiguation of entities that are
+    unknown at inference time. Thus, it is well-suited for processing streams of
+    data where new entities are frequently introduced. Despite these benefits,
+    this task is currently difficult to study, as existing approaches are either
+    evaluated on datasets that are no longer available, or omit other crucial
+    details needed to ensure fair comparison. In this work, we address this issue
+    by compiling a large benchmark adapted from existing free datasets, and
+    performing a comprehensive evaluation of a number of novel and existing
+    baseline models. 1 We investigate: how to best encode mentions, which
+    clustering algorithms are most effective for grouping mentions, how models
+    transfer to different domains, and how bounding the number of mentions
+    tracked during inference impacts performance. Our results show that the
+    relative performance of neural and feature-based mention encoders varies
+    across different domains, and in most cases the best performance is achieved
+    using a combination of both approaches. We also find that performance is
+    minimally impacted by limiting the number of tracked mentions.
+  paper: https://aclanthology.org/2021.acl-long.364/
+  github: https://github.com/rloganiv/streaming-cdc
+
+- id: bayesian-blackbox-aaai
+  title: "Active Bayesian Assessment for Black-Box Classifiers"
+  authors:
+    - name: Disi Ji
+      webiste: https://www.linkedin.com/in/disi-ji-324802a2
+    - name: Robert L. Logan IV
+      website: https://rloganiv.github.io
+    - name: Padhraic Smyth
+      website: https://www.ics.uci.edu/~smyth/index.html
+    - name: Mark Steyvers
+      website: http://psiexp.ss.uci.edu/research/
+  venue: "AAAI 2021"
+  type: conference
+  abstract: >
+    Recent advances in machine learning have led to increased deployment of
+    black-box classifiers across a wide variety of applications. In many such
+    situations there is a critical need to both reliably assess the performance
+    of these pre-trained models and to perform this assessment in a
+    label-efficient manner (given that labels may be scarce and costly to
+    collect). In this paper, we introduce an active Bayesian approach for
+    assessment of classifier performance to satisfy the desiderata of both
+    reliability and label-efficiency. We begin by developing inference
+    strategies to quantify uncertainty for common assessment metrics such as
+    accuracy, misclassification cost, and calibration error. We then propose a
+    general framework for active Bayesian assessment using inferred uncertainty
+    to guide efficient selection of instances for labeling, enabling better
+    performance assessment with fewer labels. We demonstrate significant gains
+    from our proposed active Bayesian approach via a series of systematic
+    empirical experiments assessing the performance of modern neural
+    classifiers (e.g., ResNet and BERT) on several standard image and text
+    classification datasets.
+  paper: https://arxiv.org/abs/2002.06532
+  github: https://github.com/UCIDataLab/bayesian-blackbox
+
+
+    
+
+- id: behavioral
+  title: "Deriving Behavioral Tests from Common Sense Knowledge Graphs"
+  authors:
+    - name: Yasaman Razeghi
+      website: https://yasamanrazeghi.com/
+    - name: Robert L. Logan IV
+      website: https://rloganiv.github.io/
+    - name: Sameer Singh
+      website: http://www.sameersingh.org
+  venue: "CSKGs Workshop @ AAAI 2021"
+  type: workshop
+  abstract: >
+    Although NLP models have demonstrated “superhuman” performance on common
+    sense reasoning tasks, it is unclear whether these models truly have common
+    sense knowledge. Constructing evaluation datasets to test this knowledge is
+    expensive due to the manual effort involved, and is also limited in scope.
+    Meanwhile, common sense knowledge graphs (CSKGs) aim for a wide coverage of
+    structured common sense knowledge, but can not be directly used for testing
+    purposes. In this work, we introduce a semi-automated approach that
+    leverages CSKGs to construct out-of-domain evaluation sets for NLP tasks
+    that are more scalable than purely manual approaches. Using this procedure,
+    we create test cases from two popular CSKGs—ConceptNet and ATOMIC—to test
+    the common sense reasoning capability of models trained for natural
+    language inference (NLI) and question answering (QA). These tests reveal
+    interesting differences in failure modes of these models; models trained on
+    NLI tend to perform better on tests of ontological knowledge, e.g. ’is a’
+    and ’used for’ relations, failing on tests that require understanding
+    ’desires’, ’needs’, and ’wants’, while QA models perform better on tests
+    that involve ’wants’, and ’desires’.
+  paper: https://usc-isi-i2.github.io/AAAI21workshop/papers/Razeghi_CSKGsAAAI-21.pdf
+
 - id: triggers
-  title: "Eliciting Knowledge from Language Models Using Automatically Generated Prompts"
+  title: "AutoPrompt: Eliciting Knowledge from Language Models Using Automatically Generated Prompts"
   authors:
     - name: Taylor Shin*
     - name: Yasaman Razeghi*
@@ -10,7 +142,8 @@
       website: https://www.ericswallace.com/
     - name: Sameer Singh
       website: http://www.sameersingh.org
-  venue: "2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)"
+  venue: "EMNLP 2020"
+  type: conference
   abstract: > 
     Determining the knowledge captured by pretrained language models is an
     important challenge, and is commonly tackled by probing model
@@ -29,9 +162,39 @@
     prompts, and further, MLMs can be used as relation extractors out of the
     box, when prompted with suitable prompts, more effectively than recent
     supervised RE models.
+  paper: https://aclanthology.org/volumes/2020.emnlp-main/
+  github: https://github.com/ucinlp/autoprompt
+
+- id: crowdaq
+  title: "Easy, Reproducible and Quality-Controlled Data Collection with CROWDAQ"
+  authors: 
+    - name: Qiang Ning
+    - name: Hao Wu
+    - name: Pradeep Dasigi
+    - name: Dheeru Dua
+    - name: Matt Gardner
+    - name: Robert L. Logan IV
+      website: https://rloganiv.github.io/
+    - name: Ana Marasovic
+    - name: Zhenjin Nie
+  venue: "EMNLP 2020 - Demo"
+  type: demo
+  abstract: > 
+    High-quality and large-scale data are key to success for AI systems.
+    However, large-scale data annotation efforts are often confronted with a set
+    of common challenges: (1) designing a user-friendly annotation interface; (2)
+    training enough annotators efficiently; and (3) reproducibility. To address
+    these problems, we introduce CROWDAQ, an open-source platform that
+    standardizes the data collection pipeline with customizable user-interface
+    components, automated annotator qualification, and saved pipelines in a
+    re-usable format. We show that CROWDAQ simplifies data annotation
+    significantly on a diverse set of data collection use cases and we hope it
+    will be a convenient tool for the community.
+  paper: https://paper.org/abs/2010.06694
+  github: https://github.com/Crowdaq/crowdaq
 
 - id: covid-19
-  title: "Detecting COVID-19 Misinformation on Social Media"
+  title: "COVIDLies: Detecting COVID-19 Misinformation on Social Media"
   authors:
     - name: Tamanna Hossain*
       website: https://tamanna-hossain-kay.com
@@ -44,7 +207,8 @@
       website: http://seanyoungphd.com/
     - name: Sameer Singh
       website: http://www.sameersingh.org
-  venue: EMNLP 2020 Workshop NLP-COVID
+  venue: "NLP-COVID19 Workshop @ EMNLP 2020"
+  type: workshop
   abstract: >
     The ongoing pandemic has heightened the need for developing tools to flag
     COVID-19-related misinformation on the internet, specifically on social
@@ -55,13 +219,15 @@
     retrieval of misconceptions relevant to posts being checked for veracity,
     and stance detection to identify whether the posts agree, disagree, or
     express no stance towards the retrieved misconceptions. To facilitate
-    research on this task, we release COVID-Lies, a dataset of 5K
+    research on this task, we release COVIDLies, a dataset of 5K
     expert-annotated tweets to evaluate the performance of misinformation
     detection systems on 86 different pieces of COVID-19 related
     misinformation. We evaluate existing NLP systems on this dataset, providing
     first benchmarks and identifying key challenges for future models to
     improve upon.
-  arxiv: https://openreview.net/forum?id=FCna-s-ZaIE
+  paper: https://aclanthology.org/2020.nlpcovid19-2.11/
+  dataset: https://github.com/ucinlp/covid19-data
+  github: https://github.com/ucinlp/covid19-backend 
 
 - id: importance-sampling
   title: "On Importance Sampling-Based Evaluation of Latent Language Models"
@@ -72,7 +238,7 @@
       website: https://allenai.org/team/mattg/
     - name: Sameer Singh
       website: http://www.sameersingh.org
-  venue: Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL)
+  venue: "ACL 2020"
   type: conference
   abstract: >
     Language models that use additional latent structures (e.g., syntax trees,
@@ -87,7 +253,7 @@
     differences in how importance sampling is applied in these works that can
     have substantial effects on the final estimates, as well as provide
     theoretical results which reinforce the validity of this technique.
-  arxiv: https://www.aclweb.org/anthology/2020.acl-main.196/
+  paper: https://www.aclweb.org/anthology/2020.acl-main.196/
 
 - id: pcori
   title: "Detecting Conversation Topics in Primary Care Office Visits from Transcripts of Patient-Provider Interactions"
@@ -145,7 +311,8 @@
     advanced prediction techniques and larger labeled datasets will likely be
     required to achieve prediction performance appropriate for real-world
     clinical applications.
-  arxiv: https://doi.org/10.1093/jamia/ocz140
+  paper: https://doi.org/10.1093/jamia/ocz140
+  github: https://github.com/UCIDataLab/PP_dialog_models
 
 - id: knowbert
   title: "Knowledge Enhanced Contextual Word Representations"
@@ -163,7 +330,7 @@
       website: http://www.sameersingh.org
     - name: Noah A. Smith
       website: https://homes.cs.washington.edu/~nasmith/
-  venue: "2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)"
+  venue: "EMNLP 2019"
   type: conference
   abstract: >
       Contextual word representations, typically trained on unstructured,
@@ -183,7 +350,8 @@
       measured in a probing task and downstream performance on relationship
       extraction, entity typing, and word sense disambiguation. KnowBert’s
       runtime is comparable to BERT’s and it scales to large KBs.
-  arxiv: https://www.aclweb.org/anthology/D19-1005/
+  paper: https://aclanthology.org/D19-1005/
+  github: https://github.com/allenai/kb
 
 - id: kglm
   title: "Barack's Wife Hillary: Using Knowledge Graphs for Fact-Aware Language Modeling"
@@ -198,17 +366,27 @@
       website: https://allenai.org/team/mattg/
     - name: Sameer Singh
       website: http://www.sameersingh.org
-  venue: The 57th Annual Meeting of the Association for Computational Linguistics (ACL)
+  venue: "ACL 2019"
   type: conference
   abstract: >
-    Modeling human language requires the ability to not only generate fluent text but also encode factual knowledge.
-    However, traditional language models are only capable of remembering facts seen at training time, and often have difficulty recalling them.
-    To address this, we introduce the knowledge graph language model (KGLM), a neural language model with mechanisms for selecting and copying facts from a knowledge graph that are relevant to the context.
-    These mechanisms enable the model to render information it has never seen before, as well as generate out-of-vocabulary tokens.
-    We also introduce the Linked WikiText-2 dataset, a corpus of annotated text aligned to the Wikidata knowledge graph whose contents (roughly) match the popular WikiText-2 benchmark.
-    In experiments, we demonstrate that the KGLM achieves significantly better performance than a strong baseline language model.
-    We additionally compare different language model's ability to complete sentences requiring factual knowledge, showing that the KGLM outperforms even very large language models in generating facts.
-  arxiv: https://www.aclweb.org/anthology/papers/P/P19/P19-1598/
+    Modeling human language requires the ability to not only generate fluent
+    text but also encode factual knowledge.  However, traditional language
+    models are only capable of remembering facts seen at training time, and
+    often have difficulty recalling them.  To address this, we introduce the
+    knowledge graph language model (KGLM), a neural language model with
+    mechanisms for selecting and copying facts from a knowledge graph that are
+    relevant to the context.  These mechanisms enable the model to render
+    information it has never seen before, as well as generate out-of-vocabulary
+    tokens.  We also introduce the Linked WikiText-2 dataset, a corpus of
+    annotated text aligned to the Wikidata knowledge graph whose contents
+    (roughly) match the popular WikiText-2 benchmark.  In experiments, we
+    demonstrate that the KGLM achieves significantly better performance than a
+    strong baseline language model.  We additionally compare different language
+    model's ability to complete sentences requiring factual knowledge, showing
+    that the KGLM outperforms even very large language models in generating
+    facts.
+  paper: https://www.aclweb.org/anthology/papers/P/P19/P19-1598/
+  github: https://github.com/rloganiv/kglm-model
   dataset: https://rloganiv.github.io/linked-wikitext-2
 
 - id: bayesian-blackbox
@@ -222,13 +400,18 @@
       website: https://www.ics.uci.edu/~smyth/index.html
     - name: Mark Steyvers
       website: http://psiexp.ss.uci.edu/research/
-  venue: ICML 2019 Workshop on Uncertainty & Robustness in Deep Learning
+  venue: Workshop on Uncertainty & Robustness in Deep Learning @ ICML 2019
   type: workshop
   abstract: >
-    There is an increasing need for accurate quantitative assessment of the performance of prediction models (such as deep neural networks), out-of-sample, e.g., in new environments after they have been trained.
-    In this context we propose a Bayesian framework for assessing performance characteristics of black-box classifiers, performing inference on quantities such as accuracy and calibration bias.
-    We demonstrate the approach using three deep neural networks applied to large real-world data sets, performing inference and active learning to assess class-specific performance.
-  arxiv: assets/projects/bayesian-blackbox.pdf
+    There is an increasing need for accurate quantitative assessment of the
+    performance of prediction models (such as deep neural networks),
+    out-of-sample, e.g., in new environments after they have been trained.  In
+    this context we propose a Bayesian framework for assessing performance
+    characteristics of black-box classifiers, performing inference on
+    quantities such as accuracy and calibration bias.  We demonstrate the
+    approach using three deep neural networks applied to large real-world data
+    sets, performing inference and active learning to assess class-specific
+    performance.
 
 - id: pomo
   title: "PoMo: Generating Entity-Specific Post-Modifiers in Context"
@@ -248,23 +431,34 @@
       website: http://www.sameersingh.org
     - name: Niranjan Balasubramanian
       website: https://www3.cs.stonybrook.edu/~niranjan/
-  venue: 2019 Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL)
+  venue: NAACL 2019
   type: conference
   abstract: >
-      We introduce entity post-modifier generation as an instance of a collaborative writing task.
-      Given a sentence about a target entity, the task is to automatically generate a post-modifier phrase that provides contextually relevant information about the entity.
-      For example, for the sentence, "Barack Obama, _______, supported the \#MeToo movement.", the phrase "a father of two girls" is a contextually relevant post-modifier.
-      To this end, we build PoMo, a post-modifier dataset created automatically from news articles reflecting a journalistic need for incorporating entity information that is relevant to a particular news event.
-      PoMo consists of more than 231K sentences with post-modifiers and associated facts extracted from Wikidata for around 57K unique entities.
-      We use crowdsourcing to show that modeling contextual relevance is necessary for accurate post-modifier generation.
-      We adapt a number of existing generation approaches as baselines for this dataset.
-      Our results show there is large room for improvement in terms of both identifying relevant facts to include (knowing which claims are relevant gives a >20% improvement in BLEU score), and generating appropriate post-modifier text for the context (providing relevant claims is not sufficient for accurate generation).
-      We conduct an error analysis that suggests promising directions for future research.
-  arxiv: https://arxiv.org/abs/1904.03111
+      We introduce entity post-modifier generation as an instance of a
+      collaborative writing task.  Given a sentence about a target entity, the
+      task is to automatically generate a post-modifier phrase that provides
+      contextually relevant information about the entity.  For example, for the
+      sentence, "Barack Obama, _______, supported the \#MeToo movement.", the
+      phrase "a father of two girls" is a contextually relevant post-modifier.
+      To this end, we build PoMo, a post-modifier dataset created automatically
+      from news articles reflecting a journalistic need for incorporating
+      entity information that is relevant to a particular news event.  PoMo
+      consists of more than 231K sentences with post-modifiers and associated
+      facts extracted from Wikidata for around 57K unique entities.  We use
+      crowdsourcing to show that modeling contextual relevance is necessary for
+      accurate post-modifier generation.  We adapt a number of existing
+      generation approaches as baselines for this dataset.  Our results show
+      there is large room for improvement in terms of both identifying relevant
+      facts to include (knowing which claims are relevant gives a >20%
+      improvement in BLEU score), and generating appropriate post-modifier text
+      for the context (providing relevant claims is not sufficient for accurate
+      generation).  We conduct an error analysis that suggests promising
+      directions for future research.
+  paper: https://paper.org/abs/1904.03111
   dataset: https://stonybrooknlp.github.io/PoMo/
 
 - id: mae
-  title: Multimodal Attribute Extraction
+  title: "Multimodal Attribute Extraction"
   image: assets/projects/
   authors:
     - name: Robert L. Logan IV
@@ -272,7 +466,7 @@
     - name: Samuel Humeau
     - name: Sameer Singh
       website: http://www.sameersingh.org
-  venue: 6th Workshop on Automated Knowledge Base Construction (AKBC) 2017
+  venue: AKBC Workshop @ NeurIPS 2017
   type: workshop
   abstract: >
       The broad goal of information extraction is to derive structured
@@ -290,7 +484,7 @@
       of baselines which demonstrate the relative effectiveness of the
       individual modes of information towards solving the task, as well as
       study human performance.
-  arxiv: https://arxiv.org/abs/1711.11118
+  paper: https://arxiv.org/abs/1711.11118
   poster: assets/projects/mae-poster.pdf
   github: https://github.com/rloganiv/mae-model
   dataset: https://rloganiv.github.io/mae
