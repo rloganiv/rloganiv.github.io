@@ -1,3 +1,33 @@
+- id: fruit
+  title: "FRUIT: Faithfully Reflecting Updated Information in Text"
+  authors:
+    - name: Robert L. Logan IV
+      website: https://rloganiv.github.io/
+    - name: Alexandre Passos
+      website: https://scholar.google.de/citations?user=P3ER6nYAAAAJ&hl=en
+    - name: Sameer Singh
+      website: http://www.sameersingh.org
+    - name: Ming-Wei Chang
+      website: https://mingweichang.org/
+  type: preprint
+  abstract: >
+    Textual knowledge bases such as Wikipedia require considerable effort to
+    keep up to date and consistent. While automated writing assistants could
+    potentially ease this burden, the problem of suggesting edits grounded in
+    external knowledge has been under-explored. In this paper, we introduce the
+    novel generation task of *faithfully reflecting updated information in
+    text*(FRUIT) where the goal is to update an existing article given new
+    evidence. We release the FRUIT-WIKI dataset, a collection of over 170K
+    distantly supervised data produced from pairs of Wikipedia snapshots, along
+    with our data generation pipeline and a gold evaluation set of 914
+    instances whose edits are guaranteed to be supported by the evidence. We
+    provide benchmark results for popular generation systems as well as EDIT5
+    -- a T5-based approach tailored to editing we introduce that establishes
+    the state of the art. Our analysis shows that developing models that can
+    update articles faithfully requires new capabilities for neural generation
+    models, and opens doors to many new applications.
+  paper: https://arxiv.org/pdf/2112.08634.pdf
+
 - id: nullprompts
   title: "Cutting Down on Prompts and Parameters: Simple Few-Shot Learning with Language Models"
   authors:
@@ -9,7 +39,8 @@
     - name: Sameer Singh
       website: http://www.sameersingh.org
     - name: Sebastian Riedel
-  type: preprint
+  venue: "ENLSP Workshop @ NeurIPS 2021 (Best Poster)"
+  type: workshop
   abstract: >
     Prompting language models (LMs) with training examples and task
     descriptions has been seen as critical to recent successes in few-shot
@@ -29,7 +60,7 @@
 
 - id: streaming-cdc
   title: "Benchmarking Scalable Methods for Streaming Cross Document Entity Coreference"
-  authors: 
+  authors:
     - name: Robert L. Logan IV
       website: https://rloganiv.github.io/
     - name: Andrew McCallum
@@ -96,9 +127,6 @@
   paper: https://arxiv.org/abs/2002.06532
   github: https://github.com/UCIDataLab/bayesian-blackbox
 
-
-    
-
 - id: behavioral
   title: "Deriving Behavioral Tests from Common Sense Knowledge Graphs"
   authors:
@@ -144,7 +172,7 @@
       website: http://www.sameersingh.org
   venue: "EMNLP 2020"
   type: conference
-  abstract: > 
+  abstract: >
     Determining the knowledge captured by pretrained language models is an
     important challenge, and is commonly tackled by probing model
     representations using classifiers.  However, it is difficult to design
@@ -167,7 +195,7 @@
 
 - id: crowdaq
   title: "Easy, Reproducible and Quality-Controlled Data Collection with CROWDAQ"
-  authors: 
+  authors:
     - name: Qiang Ning
     - name: Hao Wu
     - name: Pradeep Dasigi
@@ -179,7 +207,7 @@
     - name: Zhenjin Nie
   venue: "EMNLP 2020 - Demo"
   type: demo
-  abstract: > 
+  abstract: >
     High-quality and large-scale data are key to success for AI systems.
     However, large-scale data annotation efforts are often confronted with a set
     of common challenges: (1) designing a user-friendly annotation interface; (2)
@@ -207,7 +235,7 @@
       website: http://seanyoungphd.com/
     - name: Sameer Singh
       website: http://www.sameersingh.org
-  venue: "NLP-COVID19 Workshop @ EMNLP 2020"
+  venue: "NLP-COVID19 Workshop @ EMNLP 2020 (Best Paper)"
   type: workshop
   abstract: >
     The ongoing pandemic has heightened the need for developing tools to flag
@@ -227,7 +255,7 @@
     improve upon.
   paper: https://aclanthology.org/2020.nlpcovid19-2.11/
   dataset: https://github.com/ucinlp/covid19-data
-  github: https://github.com/ucinlp/covid19-backend 
+  github: https://github.com/ucinlp/covid19-backend
 
 - id: importance-sampling
   title: "On Importance Sampling-Based Evaluation of Latent Language Models"
@@ -257,7 +285,7 @@
 
 - id: pcori
   title: "Detecting Conversation Topics in Primary Care Office Visits from Transcripts of Patient-Provider Interactions"
-  authors: 
+  authors:
     - name: Jihyun Park
       website: https://ics.uci.edu/~jihyunp/
     - name: Dimitrios Kotzias
