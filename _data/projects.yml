@@ -1,3 +1,36 @@
+- id: impact
+  title: "Impact of Pretraining Term Frequencies on Few-Shot Reasoning"
+  authors:
+    - name: Yasaman Razeghi
+      website: https://yasamanrazeghi.com/
+    - name: Robert L. Logan IV
+      website: https://rloganiv.github.io/
+    - name: Matt Gardner
+      website: https://allenai.org/team/mattg/
+    - name: Sameer Singh
+      website: http://www.sameersingh.org
+  type: preprint
+  abstract: >
+    Pretrained Language Models (LMs) have demonstrated ability to perform
+    numerical reasoning by extrapolating from a few examples in few-shot
+    settings. However, the extent to which this extrapolation relies on robust
+    reasoning is unclear. In this paper, we investigate how well these models
+    reason with terms that are less frequent in the pretraining data. In
+    particular, we examine the correlations between the model performance on
+    test instances and the frequency of terms from those instances in the
+    pretraining data. We measure the strength of this correlation for a number
+    of GPT-based language models (pretrained on the Pile dataset) on various
+    numerical deduction tasks (e.g., arithmetic and unit conversion). Our
+    results consistently demonstrate that models are more accurate on instances
+    whose terms are more prevalent, in some cases above 70% (absolute) more
+    accurate on the top 10% frequent terms in comparison to the bottom 10%.
+    Overall, although LMs exhibit strong performance at few-shot numerical
+    reasoning tasks, our results raise the question of how much models actually
+    generalize beyond pretraining data, and we encourage researchers to take
+    the pretraining data into account when interpreting evaluation results.
+  paper: https://arxiv.org/abs/2202.07206
+
+
 - id: fruit
   title: "FRUIT: Faithfully Reflecting Updated Information in Text"
   authors:
@@ -26,7 +59,7 @@
     the state of the art. Our analysis shows that developing models that can
     update articles faithfully requires new capabilities for neural generation
     models, and opens doors to many new applications.
-  paper: https://arxiv.org/pdf/2112.08634.pdf
+  paper: https://arxiv.org/abs/2112.08634
 
 - id: nullprompts
   title: "Cutting Down on Prompts and Parameters: Simple Few-Shot Learning with Language Models"
@@ -218,7 +251,7 @@
     re-usable format. We show that CROWDAQ simplifies data annotation
     significantly on a diverse set of data collection use cases and we hope it
     will be a convenient tool for the community.
-  paper: https://paper.org/abs/2010.06694
+  paper: https://arxiv.org/abs/2010.06694
   github: https://github.com/Crowdaq/crowdaq
 
 - id: covid-19
@@ -482,7 +515,7 @@
       for the context (providing relevant claims is not sufficient for accurate
       generation).  We conduct an error analysis that suggests promising
       directions for future research.
-  paper: https://paper.org/abs/1904.03111
+  paper: https://arxiv.org/abs/1904.03111
   dataset: https://stonybrooknlp.github.io/PoMo/
 
 - id: mae
