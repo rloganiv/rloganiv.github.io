@@ -42,6 +42,7 @@
       website: http://www.sameersingh.org
     - name: Ming-Wei Chang
       website: https://mingweichang.org/
+  venue: "NAACL 2022 (Best New Task)"
   type: preprint
   abstract: >
     Textual knowledge bases such as Wikipedia require considerable effort to
@@ -72,7 +73,7 @@
     - name: Sameer Singh
       website: http://www.sameersingh.org
     - name: Sebastian Riedel
-  venue: "ENLSP Workshop @ NeurIPS 2021 (Best Poster)"
+  venue: "ACL Findings 2022, ENLSP Workshop @ NeurIPS 2021 (Best Poster)"
   type: workshop
   abstract: >
     Prompting language models (LMs) with training examples and task
@@ -115,7 +116,7 @@
     details needed to ensure fair comparison. In this work, we address this issue
     by compiling a large benchmark adapted from existing free datasets, and
     performing a comprehensive evaluation of a number of novel and existing
-    baseline models. 1 We investigate: how to best encode mentions, which
+    baseline models. We investigate: how to best encode mentions, which
     clustering algorithms are most effective for grouping mentions, how models
     transfer to different domains, and how bounding the number of mentions
     tracked during inference impacts performance. Our results show that the
